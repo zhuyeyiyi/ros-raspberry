@@ -1,0 +1,8 @@
+prefix=/home/pi/catkinws/install_isolated
+
+Name: serial
+Description: Description of serial
+Version: 1.2.1
+Cflags: -I/home/pi/catkinws/install_isolated/include
+Libs: -L/home/pi/catkinws/install_isolated/lib -lserial
+Requires: 

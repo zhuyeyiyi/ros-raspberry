@@ -1,0 +1,2 @@
+angles/angles:geometry/eigen_conversions:geometry/geometry:geometry/kdl_conversions:geometry/tf:geometry/tf_conversions:imu_node:laser_geometry:orocos_kinematics_dynamics/orocos_kdl:orocos_kinematics_dynamics/orocos_kinematics_dynamics:orocos_kinematics_dynamics/python_orocos_kdl:rplidar_ros:serial:vision_opencv/cv_bridge:vision_opencv/image_geometry:vision_opencv/opencv_tests:vision_opencv/vision_opencv
+-G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/pi/catkinws/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/pi/catkinws/install_isolated

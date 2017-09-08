@@ -1,0 +1,23 @@
+<launch>
+  <param name="/use_sim_time" value="false"/>
+  <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  <param name="serial_port"         type="string" value="/dev/rplidar"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="angle_compensate"    type="bool"   value="true"/>
+  </node>
+  
+  <!--node pkg="tf" type="static_transform_publisher" name="footprint_to_base" args="0 0 0 0 0 0 /base_footprint /base_link 100"/-->
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser" args="0 0 0 0 0 0 /base_link /laser 100"/>
+
+  <node pkg="imu_node" type="imu_pub" name="imu_pub" />
+  <node pkg="rplidar_ros" type="serialtest" name="serialtest" />  
+  <!--
+  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 /map /odom 40"/>
+  <node pkg="tf" type="static_transform_publisher" name="odom_to_base_footprint" args="0 0 0 0 0 0 /odom /base_footprint 40"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_foorprint_to_base_link" args="0 0 0 0 0 0 /base_footprint /base_link 40"/>
+  <node pkg="tf" type="static_transform_publisher" name="base_to_laser_broadcaster" args="0 0 0 0 0 0 /base_link /laser 40"/>
+  -->
+  <!--node pkg="rplidar_ros" type="vel_pub" name="vel_pub" /-->
+</launch>

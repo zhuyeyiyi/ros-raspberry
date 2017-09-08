@@ -1,0 +1,8 @@
+prefix=/home/pi/catkinws/install_isolated
+
+Name: imu
+Description: Description of imu
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/catkinws/install_isolated/lib 
+Requires: roscpp rospy std_msgs sensor_msgs geometry_msgs message_runtime

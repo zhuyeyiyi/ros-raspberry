@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pi/catkinws/devel_isolated/orocos_kinematics_dynamics/setup.sh

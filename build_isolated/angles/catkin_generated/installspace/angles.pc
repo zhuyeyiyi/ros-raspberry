@@ -1,0 +1,8 @@
+prefix=/home/pi/catkinws/install_isolated
+
+Name: angles
+Description: Description of angles
+Version: 1.9.11
+Cflags: -I/home/pi/catkinws/install_isolated/include
+Libs: -L/home/pi/catkinws/install_isolated/lib 
+Requires: 

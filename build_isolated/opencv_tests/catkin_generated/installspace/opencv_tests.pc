@@ -1,0 +1,8 @@
+prefix=/home/pi/catkinws/install_isolated
+
+Name: opencv_tests
+Description: Description of opencv_tests
+Version: 1.12.4
+Cflags: 
+Libs: -L/home/pi/catkinws/install_isolated/lib 
+Requires: 

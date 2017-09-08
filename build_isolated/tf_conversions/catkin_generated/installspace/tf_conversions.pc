@@ -1,0 +1,8 @@
+prefix=/home/pi/catkinws/install_isolated
+
+Name: tf_conversions
+Description: Description of tf_conversions
+Version: 1.11.8
+Cflags: -I/home/pi/catkinws/install_isolated/include -I/usr/include/eigen3 -I/home/pi/catkinws/devel_isolated/orocos_kdl/share/orocos_kdl/../../include
+Libs: -L/home/pi/catkinws/install_isolated/lib -ltf_conversions -l:/home/pi/catkinws/devel_isolated/orocos_kdl/lib/liborocos-kdl.so.1.4.0
+Requires: geometry_msgs kdl_conversions tf
